@@ -277,6 +277,10 @@
     padding: 12px 18px 100px;
   }
 
+  .project .menu-content .folder-wrap {
+    margin-top: 50px;
+  }
+
   /* 연락처 창을 캘린더 위젯에서 열 때 화면 중앙에 표시 */
   .address.mobile-centered {
     position: fixed !important;
