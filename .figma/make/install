@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# This imported site has no package dependencies to install.
+exit 0
