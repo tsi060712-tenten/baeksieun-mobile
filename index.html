@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baeksieun Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-4.0.0.min.js"
+    integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/work.js" defer></script>
+    <script src="js/responsive.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="left">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/apple logo.svg" alt="apple로고" />
+              </a>
+            </li>
+            <li>Finder</li>
+            <li>파일</li>
+            <li>편집</li>
+            <li>보기</li>
+            <li>이동</li>
+            <li>윈도우</li>
+            <li>도움말</li>
+            <div class="toggle-box">
+              <div class="icon-box"><img src="img/lightmode.svg" alt="라이트모드아이콘"></div>
+            </div>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li><img src="img/h-icon01.svg" alt="wifi아이콘" /></li>
+            <li><img src="img/h-icon02.svg" alt="배터리아이콘" /></li>
+            <li><img src="img/h-icon03.svg" alt="검색아이콘" /></li>
+            <li><img src="img/h-icon04.svg" alt="설정아이콘" /></li>
+            <li class="time">
+              <div class="header-time"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="main-bg">
+        <div class="window trash scale">
+          <img src="img/icon_trash.svg" alt="쓰레기통 아이콘" />
+        </div>
+        <div class="window memo scale">
+          <div class="port">
+            <h1></h1>
+            <span></span>
+          </div>
+          <div class="icon top">
+            <ul>
+              <li>
+                <img src="img/memo_icon01.svg" alt="메모아이콘" />
+              </li>
+              <li style="opacity: 0;">
+                <div class="goback">
+                  <img src="img/memo_icon02.svg" alt="메모아이콘" />
+                  <img src="img/memo_icon03.svg" alt="메모아이콘" />
+                </div>
+              </li>
+              <li>
+                <img src="img/memo_icon04.svg" alt="메모아이콘" />
+              </li>
+              <li>
+                <img src="img/memo_icon05.svg" alt="메모아이콘" />
+              </li>
+            </ul>
+          </div>
+          <div class="icon bottom">
+            <ul>
+              <li>
+                <img src="img/memo_icon06.svg" alt="메모아이콘" />
+              </li>
+              <li class="clip">
+                <img src="img/memo_icon08.svg" alt="메모아이콘" />
+              </li>
+              <li>
+                <img src="img/memo_icon07.svg" alt="메모아이콘" />
+              </li>
+              <li>
+                <img src="img/memo_icon09.svg" alt="메모아이콘" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="widget scale">
+          <div class="calendar"></div>
+          <div class="weather">
+            <span>시은시 취업구 성공동</span>
+            <b>100˚</b>
+            <img src="img/icon_fire.png" alt="불아이콘" />
+            <span>맑음</span>
+            <span>최고:100˚ 최저:없음</span>
+          </div>
+        </div>
+        <div class="window about-me">
+          <div class="inner">
+            <div class="topbar">
+              <div class="close-btn">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+              </div>
+              <div class="search">
+                <p>Photo Booth</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="imgbox">
+                <img src="img/photo.jpg" alt="맥북포토부스" />
+              </div>
+              <div class="txtbox">
+                <div class="minigall">
+                  <img src="img/me.jpg" alt="증명사진" />
+                </div>
+                <div class="camera">
+                  <img src="img/icon_camera.png" alt="카메라아이콘" />
+                </div>
+                <div class="video">
+                  <span>효과</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="window project">
+        <div class="inner">
+          <div class="menubg">
+            <div class="close-btn">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </div>
+            <span>즐겨찾기</span>
+            <ul class="menu">
+              <li class="has">
+                <a href="#">
+                  <img src="img/menu_project.svg" alt="프로젝트아이콘" />
+                  <p>Project</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/menu_appdesign.svg" alt="앱디자인아이콘" />
+                  <p>APP Design</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/menu_design.svg" alt="디자인아이콘" />
+                  <p>상세페이지</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/menu_cardnews.png" alt="디자인아이콘" />
+                  <p>카드뉴스</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/menu_coding.svg" alt="코딩아이콘" />
+                  <p>Clone Coding</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/menu_landing.png" alt="코딩아이콘" />
+                  <p>랜딩페이지</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/menu_redesign.svg" alt="리디자인아이콘" />
+                  <p>Web Design</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-content">
+            <div class="topbar">
+              <div class="show">
+                <div class="pre">
+                  <img src="img/pre.png" alt="미리보기창아이콘" />
+                  <img class="down" src="img/arrow-down.png" alt="아래화살표" />
+                </div>
+                <div class="arrowbox">
+                  <img src="img/arrow-left.png" alt="왼쪽화살표" />
+                  <div class="line"></div>
+                  <img src="img/arrow-right.png" alt="오른쪽화살표" />
+                </div>
+              </div>
+              <div class="search">
+                <p>Project</p>
+              </div>
+              <div class="right-icon">
+                <span><img src="img/search.svg" alt="돋보기아이콘" /></span>
+                <span><img src="img/more_btn.svg" alt="더보기아이콘" /></span>
+              </div>
+            </div>
+            <div class="folder-wrap">
+              <ul>
+                <li data-category="app-design">
+                  <img src="img/file_big.svg" alt="폴더아이콘" />
+                  <span>App Design</span>
+                </li>
+                <li data-category="inner-page">
+                  <img src="img/file_big.svg" alt="폴더아이콘" />
+                  <span>상세페이지</span>
+                </li>
+                <li data-category="card-news">
+                  <img src="img/file_big.svg" alt="폴더아이콘" />
+                  <span>카드뉴스</span>
+                </li>
+                <li data-category="clone-coding">
+                  <img src="img/file_big.svg" alt="폴더아이콘" />
+                  <span>Clone Coding</span>
+                </li>
+                <li data-category="landing-page">
+                  <img src="img/file_big.svg" alt="폴더아이콘" />
+                  <span>랜딩페이지</span>
+                </li>
+                <li data-category="web-design">
+                  <img src="img/file_big.svg" alt="폴더아이콘" />
+                  <span>Web Design</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="window address close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </div>
+            <div class="search">
+              <p>Contact</p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="copy-toast">Copied!</div>
+            <ul>
+              <li class="copy">
+                <img src="img/mail.svg" alt="메일아이콘" />
+                <span>tsi060712@naver.com</span>
+              </li>
+              <li class="copy">
+                <img src="img/call.svg" alt="전화아이콘" />
+                <span>010-4653-6344</span>
+              </li>
+              <li class="pdf-pre">
+                <img src="img/resume.svg" alt="위치아이콘" style="width: 22px; height: 22px;"/>
+                <span>이력서보기</span>
+              </li>
+            </ul>
+            <button>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <p>contact me!</p>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="window resume close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </div>
+            <div class="search">
+              <p>Resume.pdf</p>
+            </div>
+            <a href="pdf/resume.pdf" download>
+                <span>
+                  <img src="img/download.svg" alt="이력서다운로드버튼">
+                </span>
+            </a>
+          </div>
+          <div class="resume-content">
+            <iframe src="pdf/resume.pdf#view=FitH" frameborder="0"></iframe>
+          </div>
+          
+        </div>
+      </div>
+      <div class="window workpage app-window close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <h4>비버모아</h4>
+            <div class="pagebtn">
+              <a href="#">
+                <img src="img/arrow-left.png" alt="왼쪽화살표" />
+              </a>
+              <a href="#">
+                <img src="img/arrow-left.png" alt="오른쪽화살표" />
+              </a>
+            </div>
+          </div>
+          <div class="content">
+            <div class="work">
+              <div class="work-img">
+                <img src="img/app1-thumb.png" alt="작업물이미지" style="object-fit: cover; object-position: center;" />
+              </div>
+              <div class="work-txt">
+                <h2>비버모아</h2>
+                <span>
+                  브랜드의 감각적인 무드를 전달하는 스튜디오카일
+                  웹사이트입니다. gsap과 scrollTrigger 를 이용해 여러 인터랙션을
+                  구현하고 jQuery 로 cursor 스타일을 변경했습니다.</span>
+                <div class="meta">
+                  <p>
+                    <span>PERIOD</span>
+                    <strong>2026.07.22 - 2026.07.26</strong>
+                  </p>
+                  <p>
+                    <span>TOOLS</span>
+                    <strong>Figma · Chat GPT · Photoshop</strong>
+                  </p>
+                </div>
+                <div class="site-btn">
+                  <a href="https://www.figma.com/proto/u7wTjLv8YEzTfc0dEy3owN/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=53-4&t=4ImloFybozFKGUfd-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=53%3A4&show-proto-sidebar=1" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>PROTOTYPE</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                  <a href="https://app.notion.com/p/d807cf0d4c9f8324a3c88148b726af8d" class="view-site" target="_blank" rel="noopener noreferrer"> 
+                    <p>PROCESS</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="work-slide">
+              <div class="slide-inner">
+                <div class="swiper archive">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/app1-thumb.png" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>비버모아</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+                <script>
+                  var swiper = new Swiper('.archive', {
+                    pagination: {
+                      el: '.swiper-pagination',
+                      dynamicBullets: true,
+                    },
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  });
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="window workpage inner-page close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <h4>글램팜</h4>
+            <div class="pagebtn">
+              <a href="#">
+                <img src="img/arrow-left.png" alt="왼쪽화살표" />
+              </a>
+              <a href="#">
+                <img src="img/arrow-left.png" alt="오른쪽화살표" />
+              </a>
+            </div>
+          </div>
+          <div class="content">
+            <div class="work">
+              <div class="work-img">
+                <img src="img/glam.jpg" alt="작업물이미지" style="object-fit: cover; object-position: center;" />
+              </div>
+              <div class="work-txt">
+                <h2>글램팜</h2>
+                <span>
+                  글램팜 고데기의 제품 특징과 기능을 소비자가 쉽게 이해할 수 있도록 구성하고, 제품의 품질과 프리미엄 이미지를 함께 전달하는 것을 목표로 제작했습니다. 기존 홈페이지에 있던 GIF를 사용하여 제품의 기능을 시각적으로 전달했습니다.
+                </span>
+                <div class="meta">
+                  <p>
+                    <span>PERIOD</span>
+                    <strong>2026.08.22</strong>
+                  </p>
+                  <p>
+                    <span>TOOLS</span>
+                    <strong>Figma · Photoshop · Chat GPT</strong>
+                  </p>
+                </div>
+                <div class="site-btn">
+                  <a href="https://app.notion.com/p/3d37cf0d4c9f808f8e5ff03fc8821596" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>PROCESS</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="work-slide">
+              <div class="slide-inner">
+                <div class="swiper archive">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/glam.jpg" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>글램팜</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/innerpage1.jpg" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>국일 식초</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/innerpage2.jpg" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>국일 퐁퐁</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+                <script>
+                  var swiper = new Swiper('.archive', {
+                    pagination: {
+                      el: '.swiper-pagination',
+                      dynamicBullets: true,
+                    },
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  });
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="window workpage card-news close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <h4>비버모아</h4>
+            <div class="pagebtn">
+              <a href="#">
+                <img src="img/arrow-left.png" alt="왼쪽화살표" />
+              </a>
+              <a href="#">
+                <img src="img/arrow-left.png" alt="오른쪽화살표" />
+              </a>
+            </div>
+          </div>
+          <div class="content">
+            <div class="work">
+              <div class="work-img">
+                <img src="img/gongcha.jpg" alt="작업물이미지" style="object-fit: cover; object-position: center;"/>
+              </div>
+              <div class="work-txt">
+                <h2>공차</h2>
+                <span>
+                  공차의 망고쥬얼리밀크티와 말차 쥬얼리 밀크티를 비교하는 취향 선택형 카드뉴스를 제작했습니다. '오늘 너의 취향은?'을 중심으로 두 제품의 색감과 특징이 직관적으로 보이도록 구성했습니다.
+                </span>
+                <div class="meta">
+                  <p>
+                    <span>PERIOD</span>
+                    <strong>2026.08.22</strong>
+                  </p>
+                  <p>
+                    <span>TOOLS</span>
+                    <strong>Figma · Photoshop · Chat GPT</strong>
+                  </p>
+                </div>
+                <div class="site-btn">
+                  <a href="https://app.notion.com/p/97a7cf0d4c9f82a5beb801070d924a10" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>PROCESS</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="work-slide">
+              <div class="slide-inner">
+                <div class="swiper archive">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/gongcha.jpg" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>공차</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/fwee.jpg" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>fwee</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/onitsuka.jpg" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>오니츠카타이거</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/magma.jpg" alt="" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>제네시스 마그마</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+                <script>
+                  var swiper = new Swiper('.archive', {
+                    pagination: {
+                      el: '.swiper-pagination',
+                      dynamicBullets: true,
+                    },
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  });
+                </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="window workpage clone-window close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <h4>StudioKyle</h4>
+            <div class="pagebtn">
+              <a href="#">
+                <img src="img/arrow-left.png" alt="왼쪽화살표" />
+              </a>
+              <a href="#">
+                <img src="img/arrow-left.png" alt="오른쪽화살표" />
+              </a>
+            </div>
+          </div>
+          <div class="content">
+            <div class="work">
+              <div class="work-img">
+                <img src="img/coding-img1.png" alt="작업물이미지" />
+              </div>
+              <div class="work-txt">
+                <h2>StudioKyle</h2>
+                <span>
+                  브랜드의 감각적인 무드를 전달하는 스튜디오카일
+                  웹사이트입니다. gsap과 scrollTrigger 를 이용해 여러 인터랙션을
+                  구현하고 jQuery 로 cursor 스타일을 변경했습니다.</span>
+                <div class="meta">
+                  <p>
+                    <span>PERIOD</span>
+                    <strong>2026.09.14 - 2026.10.03</strong>
+                  </p>
+                  <p>
+                    <span>TOOLS</span>
+                    <strong>HTML · CSS · jQuery · Lenis · gsap</strong>
+                  </p>
+                </div>
+                <div class="site-btn">
+                  <a href="#" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>MY SITE</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                  <a href="#" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>Process</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                </div class="site-btn">
+              </div>
+            </div>
+            <div class="work-slide">
+              <div class="slide-inner">
+                <div class="swiper archive">
+                  <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/coding-img1.png" alt="클론코딩썸네일1" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>StudioKyle</p>
+                        </div>
+                      </a>
+                    </div> -->
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/365mc.png" alt="클론코딩썸네일2" width="100%" height="100%" style="object-fit: cover; object-position: center;">
+                        <div class="thumb-title">
+                          <p>(주)365mc</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/coding-img2.png" alt="클론코딩썸네일3" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>조세마루</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/coding-img3.png" alt="클론코딩썸네일4" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>부산국제영화제</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/coding-img4.png" alt="클론코딩썸네일5" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>삼양미디어</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="swiper-pagination"></div>
+                <script>
+                  var swiper = new Swiper('.archive', {
+                    pagination: {
+                      el: '.swiper-pagination',
+                      dynamicBullets: true,
+                    },
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  });
+                </script>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="window workpage landing-page close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <h4>Sumone</h4>
+            <div class="pagebtn">
+              <a href="#">
+                <img src="img/arrow-left.png" alt="왼쪽화살표" />
+              </a>
+              <a href="#">
+                <img src="img/arrow-left.png" alt="오른쪽화살표" />
+              </a>
+            </div>
+          </div>
+          <div class="content">
+            <div class="work">
+              <div class="work-img">
+                <img src="img/sumone.jpg" alt="작업물이미지" />
+              </div>
+              <div class="work-txt">
+                <h2>Sumone</h2>
+                <span>
+                  커플 문답 앱인 썸원의 브랜드 분위기와 서비스를 참고해 SumOne 2.0 : Grow Together 의 방향성을 보여주는 랜딩페이지를 디자인했습니다. AI 를 활용해 랜딩페이지에 필요한 비주얼을 제작하고 Figma 에 적용했습니다.
+                </span>
+                <div class="meta">
+                  <p>
+                    <span>PERIOD</span>
+                    <strong>2026.09.14 - 2026.10.03</strong>
+                  </p>
+                  <p>
+                    <span>TOOLS</span>
+                    <strong>Figma · Chat GPT · Photoshop</strong>
+                  </p>
+                </div>
+                <div class="site-btn">
+                  <a href="#" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>VIEW MORE</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                  <a href="https://app.notion.com/p/7107cf0d4c9f83b1ac3201747a0184fc" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>PROCESS</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                </div class="site-btn">
+              </div>
+            </div>
+            <div class="work-slide">
+              <div class="slide-inner">
+                <div class="swiper archive">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/sumone.jpg" alt="랜딩페이지썸네일1" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>썸원</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="swiper-pagination"></div>
+                <script>
+                  var swiper = new Swiper('.archive', {
+                    pagination: {
+                      el: '.swiper-pagination',
+                      dynamicBullets: true,
+                    },
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  });
+                </script>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="window workpage web-page close">
+        <div class="inner">
+          <div class="topbar">
+            <div class="close-btn">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <h4>Kia Lifestyle</h4>
+            <div class="pagebtn">
+              <a href="#">
+                <img src="img/arrow-left.png" alt="왼쪽화살표" />
+              </a>
+              <a href="#">
+                <img src="img/arrow-left.png" alt="오른쪽화살표" />
+              </a>
+            </div>
+          </div>
+          <div class="content">
+            <div class="work">
+              <div class="work-img">
+                <img src="img/kia.png" alt="작업물이미지" />
+              </div>
+              <div class="work-txt">
+                <h2>Kia Lifestyle</h2>
+                <span>
+                  차량 정보 제공에서 확장시켜 지속적인 브랜드 경험과 고객 간의 접점을 강화하기 위해 실질적인 차박 관련 정보 제공과 캠페인으로 사용자 참여를 확대 시키는 독립적인 컨텐츠 플랫폼을 제작했습니다.
+                </span>
+                <div class="meta">
+                  <p>
+                    <span>PERIOD</span>
+                    <strong>2026.09.03 - 2026.09.30</strong>
+                  </p>
+                  <p>
+                    <span>TOOLS</span>
+                    <strong>Figma · VSCode · Chat GPT · GitHub</strong>
+                  </p>
+                </div>
+                <div class="site-btn">
+                  <a href="https://tsi060712-tenten.github.io/kia-success/" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>MY SITE</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                  <a href="https://app.notion.com/p/kia-lifestyle-3fd7cf0d4c9f80f2b129fb8f1e031ca5" class="view-site" target="_blank" rel="noopener noreferrer">
+                    <p>PROCESS</p>
+                    <img src="img/stat_minus_2.svg" alt="더보기화살표" />
+                  </a>
+                </div class="site-btn">
+              </div>
+            </div>
+            <div class="work-slide">
+              <div class="slide-inner">
+                <div class="swiper archive">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <img src="img/kia.png" alt="웹디자인썸네일1" width="100%" height="100%">
+                        <div class="thumb-title">
+                          <p>Kia LifeStyle</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="swiper-pagination"></div>
+                <script>
+                  var swiper = new Swiper('.archive', {
+                    pagination: {
+                      el: '.swiper-pagination',
+                      dynamicBullets: true,
+                    },
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  });
+                </script>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="inner">
+        <div class="finder">
+          <img src="img/icon_finder.png" alt="파인더아이콘" />
+        </div>
+        <div class="line"></div>
+        <div class="skills">
+          <ul>
+            <li>
+              <img src="img/icon_illustrator.png" alt="일러스트아이콘" />
+            </li>
+            <li>
+              <img src="img/icon_vscode.png" alt="vscode아이콘" />
+            </li>
+            <li>
+              <img src="img/icon_ps.png" alt="포토샵아이콘" />
+            </li>
+            <li>
+              <img src="img/icon_figma.png" alt="일러스트아이콘" />
+            </li>
+            <li class="notion">
+              <a
+                href="https://app.notion.com/p/7037cf0d4c9f83ad9768817db4724702" target="_blank" rel="noopener noreferrer"
+                ><img src="img/icon_notion.png" alt="노션아이콘"
+              /></a>
+            </li>
+            <!-- <li>
+              <img src="img/icon_file.png" alt="파일아이콘" />
+            </li> -->
+            <li>
+              <img src="img/icon_github.png" alt="깃허브아이콘" />
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="contact">
+          <div class="gallery">
+            <img src="img/icon_aboutme.png" alt="갤러리아이콘" />
+          </div>
+          <div class="wed">
+            <img src="img/icon_calendar.png" alt="캘린더아이콘" />
+          </div>
+          <div class="mail">
+            <img src="img/icon_mail.png" alt="메일아이콘" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
