@@ -70,6 +70,24 @@ $(function () {
     $window.css("z-index", mobileZIndex);
   }
 
+  function hideMobileFooter() {
+    $("footer")
+      .removeClass("mobile-footer-over-project")
+      .addClass("mobile-footer-hidden");
+  }
+
+  function showMobileFooterOverProject() {
+    $("footer")
+      .removeClass("mobile-footer-hidden")
+      .addClass("mobile-footer-over-project");
+  }
+
+  function resetMobileFooter() {
+    $("footer").removeClass(
+      "mobile-footer-hidden mobile-footer-over-project"
+    );
+  }
+
   $(document)
     .off("pointerdown.mobileWindowStack", ".window")
     .on("pointerdown.mobileWindowStack", ".window", function () {
@@ -114,12 +132,14 @@ $(function () {
       .addClass("mobile-open")
       .removeClass("close");
 
+    hideMobileFooter();
     bringMobileWindowToFront($project);
   });
 
   // Project 창을 닫는 버튼을 누르면 홈 화면으로 돌아갑니다.
   $(".project .menubg .close-btn").off("click.mobileProjectClose").on("click.mobileProjectClose", function () {
     $(".project").removeClass("mobile-open");
+    resetMobileFooter();
   });
 
   // Project 창의 왼쪽 화살표 컨테이너를 누르면 모바일 홈 화면으로 돌아갑니다.
@@ -132,6 +152,23 @@ $(function () {
       $(".project")
         .removeClass("mobile-open")
         .addClass("close");
+
+      resetMobileFooter();
+    });
+
+  // Project 빈 영역을 누르면 숨겨진 Dock을 0.3초 동안 위로 올립니다.
+  $(".project")
+    .off("click.mobileFooterReveal")
+    .on("click.mobileFooterReveal", function (event) {
+      if ($(event.target).closest(".topbar, .folder-wrap li").length) return;
+      showMobileFooterOverProject();
+    });
+
+  // 상세 작업물 창을 열 때는 Dock을 다시 화면 아래로 숨깁니다.
+  $(".folder-wrap ul li")
+    .off("click.mobileFooterForWork")
+    .on("click.mobileFooterForWork", function () {
+      hideMobileFooter();
     });
 
   // 캘린더 위젯을 누르면 기존 Career 창을 화면 중앙에 배치합니다.
