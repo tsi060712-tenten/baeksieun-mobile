@@ -100,6 +100,18 @@ $(function () {
     $(".project").removeClass("mobile-open");
   });
 
+  // Project 창의 왼쪽 화살표를 누르면 모바일 홈 화면으로 돌아갑니다.
+  $(".project .topbar .arrowbox img:first-child")
+    .off("click.mobileProjectBack")
+    .on("click.mobileProjectBack", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      $(".project")
+        .removeClass("mobile-open")
+        .addClass("close");
+    });
+
   // 캘린더 위젯을 누르면 기존 Career 창을 화면 중앙에 배치합니다.
   $(".widget .calendar, .contact .wed").off("click.mobileCareer").on("click.mobileCareer", function () {
     $(".address")

@@ -244,7 +244,7 @@
     min-height: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     box-sizing: border-box;
   }
 
@@ -255,6 +255,7 @@
     min-height: 56px;
     padding: 0 16px;
     margin-top: 20%;
+    cursor: default;
   }
 
   .project .menu-content .topbar .close-btn {
@@ -280,6 +281,7 @@
     gap: 0;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   .project .menu-content .topbar .show .arrowbox .line,
@@ -294,7 +296,7 @@
     text-align: center;
   }
 
-  /* 창 상단 Project 제목은 유지하고 본문은 스크롤 가능 */
+  /* 창 상단 Project 제목은 유지하고 본문은 화면 안에 고정 */
   .project .menu-content .content,
   .project .menu-content .folder-wrap,
   .project .menu-content .project-list {
