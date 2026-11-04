@@ -477,6 +477,8 @@
   .workpage.card-news .content .work {
     column-gap: 10px;
     row-gap: 0;
+    padding-top: 12px;
+    justify-content: flex-start;
   }
 
   .workpage.card-news .content .work .work-img {
@@ -517,6 +519,11 @@
 
   .workpage.card-news .content .work-txt .site-btn {
     align-items: center;
+    margin-top: 0;
+  }
+
+  .workpage.card-news .inner .topbar h4 {
+    font-size: 20px;
   }
 
   .workpage.card-news .content .work-txt .site-btn .view-site {
