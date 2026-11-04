@@ -349,10 +349,6 @@ $(function () {
   // App Design 폴더 클릭 → 창 열기
   $(".folder-wrap ul li").eq(0).click(function () {
     openWindow($(".app-window"));
-
-    $(".app-window")
-      .addClass("open")
-      .css("z-index", maxZIndex + 1);
   });
 
   // app-design 창 닫기
@@ -364,11 +360,7 @@ $(function () {
   // inner-page 폴더 클릭 → 창 열기
   $(".folder-wrap ul li").eq(1).click(function () {
     openWindow($(".inner-page"));
-
-    $(".inner-page")
-      .addClass("open")
-      .css("z-index", maxZIndex + 1);
-    });
+  });
 
   // inner-page 창 닫기
   $(".inner-page .topbar .close-btn").click(function (e) {
@@ -379,11 +371,7 @@ $(function () {
   // card-news 폴더 클릭 → 창 열기
   $(".folder-wrap ul li").eq(2).click(function () {
     openWindow($(".card-news"));
-
-    $(".card-news")
-      .addClass("open")
-      .css("z-index", maxZIndex + 1);
-    });
+  });
 
   // card-news 창 닫기
   $(".card-news .topbar .close-btn").click(function (e) {
@@ -392,28 +380,20 @@ $(function () {
   });
 
   // clone coding 폴더 클릭 → 창 열기
-    $(".folder-wrap ul li").eq(3).click(function () {
-      openWindow($(".clone-window"));
+  $(".folder-wrap ul li").eq(3).click(function () {
+    openWindow($(".clone-window"));
+  });
 
-      $(".clone-window")
-        .addClass("open")
-        .css("z-index", maxZIndex + 1);
-      });
-
-    // clone coding 창 닫기
-    $(".clone-window .topbar .close-btn").click(function (e) {
-      e.stopPropagation();
-      $(".clone-window").removeClass("open");
-    });
+  // clone coding 창 닫기
+  $(".clone-window .topbar .close-btn").click(function (e) {
+    e.stopPropagation();
+    $(".clone-window").removeClass("open");
+  });
 
   // landing-page 폴더 클릭 → 창 열기
   $(".folder-wrap ul li").eq(4).click(function () {
     openWindow($(".landing-page"));
-
-    $(".landing-page")
-      .addClass("open")
-      .css("z-index", maxZIndex + 1);
-    });
+  });
 
   // landing-page 창 닫기
   $(".landing-page .topbar .close-btn").click(function (e) {
@@ -424,11 +404,7 @@ $(function () {
   // web-page 폴더 클릭 → 창 열기
   $(".folder-wrap ul li").eq(5).click(function () {
     openWindow($(".web-page"));
-
-    $(".web-page")
-      .addClass("open")
-      .css("z-index", maxZIndex + 1);
-    });
+  });
 
   // web-page 창 닫기
   $(".web-page .topbar .close-btn").click(function (e) {
