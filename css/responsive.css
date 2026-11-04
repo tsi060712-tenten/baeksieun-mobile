@@ -467,14 +467,14 @@
     display: none;
   }
 
-  /* 카드뉴스 상세 창에서 편집된 인스턴스만 조정 */
-  .workpage.card-news .inner .topbar {
+  /* 모든 모바일 작업물 상세 창에 동일한 레이아웃 적용 */
+  .workpage .inner .topbar {
     padding-left: 24px;
     padding-right: 24px;
     margin-top: 70px;
   }
 
-  .workpage.card-news .content .work {
+  .workpage .content .work {
     column-gap: 10px;
     row-gap: 0;
     padding-top: 12px;
@@ -485,52 +485,52 @@
     justify-content: flex-start;
   }
 
-  .workpage.card-news .content .work .work-img {
+  .workpage .content .work .work-img {
     width: fit-content;
     height: 250px;
   }
 
-  .workpage.card-news .content .work .work-img img {
+  .workpage .content .work .work-img img {
     width: 220px;
   }
 
-  .workpage.card-news .content .work .work-txt {
+  .workpage .content .work .work-txt {
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
-  .workpage.card-news .content .work-txt h2 {
+  .workpage .content .work-txt h2 {
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 32px;
   }
 
-  .workpage.card-news .content .work-txt > span {
+  .workpage .content .work-txt > span {
     font-size: 16px;
   }
 
-  .workpage.card-news .content .work-txt .meta {
+  .workpage .content .work-txt .meta {
     padding-top: 8px;
     padding-right: 0;
     padding-bottom: 8px;
     padding-left: 0;
   }
 
-  .workpage.card-news .content .work-txt .meta p {
+  .workpage .content .work-txt .meta p {
     padding-top: 8px;
     padding-right: 0;
     padding-bottom: 8px;
     padding-left: 0;
   }
 
-  .workpage.card-news .content .work-txt .meta p:first-child > span,
-  .workpage.card-news .content .work-txt .meta p:first-child strong,
-  .workpage.card-news .content .work-txt .meta p:last-child > span,
-  .workpage.card-news .content .work-txt .meta p:last-child strong {
+  .workpage .content .work-txt .meta p:first-child > span,
+  .workpage .content .work-txt .meta p:first-child strong,
+  .workpage .content .work-txt .meta p:last-child > span,
+  .workpage .content .work-txt .meta p:last-child strong {
     font-size: 12px;
   }
 
-  .workpage.card-news .content .work-txt .site-btn {
+  .workpage .content .work-txt .site-btn {
     align-items: center;
     justify-content: center;
     margin-top: 0;
@@ -539,11 +539,11 @@
     margin-left: 0;
   }
 
-  .workpage.card-news .inner .topbar h4 {
+  .workpage .inner .topbar h4 {
     font-size: 20px;
   }
 
-  .workpage.card-news .content .work-txt .site-btn .view-site {
+  .workpage .content .work-txt .site-btn .view-site {
     padding-top: 7px;
     padding-left: 19px;
     padding-right: 19px;
