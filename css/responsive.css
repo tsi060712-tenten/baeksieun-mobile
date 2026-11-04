@@ -554,6 +554,32 @@
     margin-left: 0;
   }
 
+  /* 선택된 Clone Coding 작업물의 텍스트와 meta 영역만 조정 */
+  .workpage.clone-window .content .work .work-txt {
+    text-align: center;
+  }
+
+  .workpage.clone-window .content .work-txt .meta {
+    width: 300px;
+    padding-top: 12px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .workpage.clone-window .content .work-txt .meta p:first-child {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: center;
+  }
+
+  .workpage.clone-window .content .work-txt .meta p:last-child {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   /* 연락처 창을 캘린더 위젯에서 열 때 화면 중앙에 표시 */
   .address.mobile-centered {
     position: fixed !important;
