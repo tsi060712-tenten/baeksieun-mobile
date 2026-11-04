@@ -467,6 +467,65 @@
     display: none;
   }
 
+  /* 카드뉴스 상세 창에서 편집된 인스턴스만 조정 */
+  .workpage.card-news .inner .topbar {
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 70px;
+  }
+
+  .workpage.card-news .content .work {
+    column-gap: 10px;
+    row-gap: 0;
+  }
+
+  .workpage.card-news .content .work .work-img {
+    height: 250px;
+  }
+
+  .workpage.card-news .content .work .work-txt {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .workpage.card-news .content .work-txt h2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 32px;
+  }
+
+  .workpage.card-news .content .work-txt > span {
+    font-size: 16px;
+  }
+
+  .workpage.card-news .content .work-txt .meta {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .workpage.card-news .content .work-txt .meta p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .workpage.card-news .content .work-txt .meta p:first-child > span,
+  .workpage.card-news .content .work-txt .meta p:first-child strong,
+  .workpage.card-news .content .work-txt .meta p:last-child > span,
+  .workpage.card-news .content .work-txt .meta p:last-child strong {
+    font-size: 12px;
+  }
+
+  .workpage.card-news .content .work-txt .site-btn {
+    align-items: center;
+  }
+
+  .workpage.card-news .content .work-txt .site-btn .view-site {
+    padding-left: 19px;
+    padding-right: 19px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
   /* 연락처 창을 캘린더 위젯에서 열 때 화면 중앙에 표시 */
   .address.mobile-centered {
     position: fixed !important;
