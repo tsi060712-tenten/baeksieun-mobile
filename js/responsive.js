@@ -46,7 +46,7 @@ $(function () {
       <a class="mobile-notion" href="https://app.notion.com/p/7037cf0d4c9f83ad9768817db4724702" target="_blank" rel="noopener noreferrer">
         Notion
       </a>
-      <span class="mobile-toast" role="status">복사했어요!</span>
+      <span class="mobile-toast" role="status">Copied!</span>
     </div>
   `;
 
@@ -54,6 +54,27 @@ $(function () {
   if (!$(".memo .mobile-contact").length) {
     $(".memo .port").append(mobileContactHtml);
   }
+
+  // 마지막으로 누른 모바일 창이 항상 가장 위에 오도록 관리합니다.
+  let mobileZIndex = 2000;
+
+  function bringMobileWindowToFront($window) {
+    $(".window").each(function () {
+      mobileZIndex = Math.max(
+        mobileZIndex,
+        Number($(this).css("z-index")) || 0
+      );
+    });
+
+    mobileZIndex++;
+    $window.css("z-index", mobileZIndex);
+  }
+
+  $(document)
+    .off("pointerdown.mobileWindowStack", ".window")
+    .on("pointerdown.mobileWindowStack", ".window", function () {
+      bringMobileWindowToFront($(this));
+    });
 
   // 이메일·전화번호를 누르면 클립보드에 복사합니다.
   $(document).on("click", ".mobile-contact .mobile-copy", async function () {
@@ -72,7 +93,7 @@ $(function () {
 
     // 복사 완료 안내를 잠깐 표시합니다.
     const $toast = $(".mobile-contact .mobile-toast");
-    $toast.addClass("show");
+    $toast.text("Copied!").addClass("show");
     setTimeout(function () {
       $toast.removeClass("show");
     }, 1200);
@@ -89,10 +110,11 @@ $(function () {
     event.preventDefault();
     event.stopPropagation();
 
-    $(".project")
+    const $project = $(".project")
       .addClass("mobile-open")
-      .removeClass("close")
-      .css("z-index", 2000);
+      .removeClass("close");
+
+    bringMobileWindowToFront($project);
   });
 
   // Project 창을 닫는 버튼을 누르면 홈 화면으로 돌아갑니다.
@@ -114,10 +136,11 @@ $(function () {
 
   // 캘린더 위젯을 누르면 기존 Career 창을 화면 중앙에 배치합니다.
   $(".widget .calendar, .contact .wed").off("click.mobileCareer").on("click.mobileCareer", function () {
-    $(".address")
+    const $address = $(".address")
       .removeClass("close")
-      .addClass("mobile-centered")
-      .css("z-index", 3000);
+      .addClass("mobile-centered");
+
+    bringMobileWindowToFront($address);
   });
 
   // Career/Contact 창의 닫기 버튼을 누르면 창을 숨기고 중앙 배치 클래스를 제거합니다.

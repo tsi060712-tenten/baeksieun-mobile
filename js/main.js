@@ -58,7 +58,7 @@ $(function () {
 
   function typingSpan() {
     if (idx < textSpan.length) {
-      $(".port span").html(textSpan.slice(0, idx + 1).replace(/\n/g, "<br>"));
+      $(".port > span").html(textSpan.slice(0, idx + 1).replace(/\n/g, "<br>"));
 
       idx++;
       // 타이핑속도조절
@@ -302,6 +302,9 @@ $(function () {
       // 클릭한 창을 가장 위로
       zIndex = maxZIndex + 1;
       $window.css("z-index", zIndex);
+
+      // 모바일에서는 창을 앞으로만 가져오고 드래그 위치는 변경하지 않습니다.
+      if (window.matchMedia("(max-width: 424.98px)").matches) return;
 
       isDragging = true;
       $dragWindow = $window;

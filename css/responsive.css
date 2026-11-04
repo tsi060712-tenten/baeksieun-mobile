@@ -33,6 +33,11 @@
   }
 
   #main-bg {
+    --mobile-content-top: clamp(32px, 9dvh, 77px);
+    --mobile-memo-size: min(80vw, 44dvh);
+    --mobile-content-gap: clamp(20px, 3dvh, 28px);
+    --mobile-widget-width: min(88vw, 46dvh);
+
     position: absolute;
     inset: 0;
     width: 100%;
@@ -49,9 +54,9 @@
   .memo {
     display: flex !important;
     position: absolute;
-    top: 9%;
+    top: var(--mobile-content-top);
     left: 50%;
-    width: 80%;
+    width: var(--mobile-memo-size);
     aspect-ratio: 1 / 1;
     border: 0;
     transform: translateX(-50%);
@@ -88,9 +93,13 @@
   .widget {
     display: flex;
     position: absolute;
-    top: 50%;
+    top: calc(
+      var(--mobile-content-top) +
+      var(--mobile-memo-size) +
+      var(--mobile-content-gap)
+    );
     left: 50%;
-    width: 88%;
+    width: var(--mobile-widget-width);
     gap: 10px;
     align-items: stretch;
     justify-content: space-between;
