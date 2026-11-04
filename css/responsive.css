@@ -164,9 +164,7 @@
     display: none;
   }
   footer .inner .finder::after {
-    opacity: 1;
-    left: 55%;
-    top: -110%;
+    display: none;
   }
 
   footer .finder img {

@@ -1291,20 +1291,7 @@ footer .inner .finder::before {
   transform: translateX(-50%);
 }
 footer .inner .finder::after {
-  content: url("../img/bar_project.png");
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -95%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-}
-footer .inner .finder:hover::after {
-  transition: all 0.5s;
-  opacity: 1;
+  content: "Project";
 }
 footer .inner .line {
   width: 1px;
@@ -1330,20 +1317,7 @@ footer .inner .notion {
   position: relative;
 }
 footer .inner .notion::after {
-  content: url("../img/bar_notion.png");
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -95%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-}
-footer .inner .notion:hover::after {
-  transition: all 0.5s;
-  opacity: 1;
+  content: "Notion";
 }
 footer .contact {
   display: flex;
@@ -1363,51 +1337,58 @@ footer .contact > div img {
   height: 100%;
 }
 .contact .gallery::after {
-  content: url("../img/bar_aboutme.png");
-  position: absolute;
-  top: -95%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-}
-footer .inner .gallery:hover::after {
-  transition: all 0.5s;
-  opacity: 1;
+  content: "About me";
 }
 .contact .wed::after {
-  content: url("../img/bar_career.png");
-  position: absolute;
-  top: -95%;
-  left: 50%;
-  transform: translateX(-50%) translateZ(0);
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  /* transition: none; */
-}
-footer .inner .wed:hover::after {
-  transition: opacity 0.5s;
-  opacity: 1;
+  content: "Career";
 }
 .contact .mail::after {
-  content: url("../img/bar_contact.png");
-  position: absolute;
-  top: -95%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
+  content: "Contact";
 }
+footer .inner .finder::after,
+footer .inner .notion::after,
+footer .inner .gallery::after,
+footer .inner .wed::after,
+footer .inner .mail::after {
+  position: absolute;
+  z-index: 1;
+  top: -42px;
+  left: 50%;
+  display: block;
+  width: max-content;
+  padding: 7px 11px;
+  transform: translate(-50%, 4px);
+  border: var(--glass-border);
+  border-radius: 8px;
+  background: var(--search-bg);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.18);
+  color: #222;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+footer .inner .finder:hover::after,
+footer .inner .notion:hover::after,
+footer .inner .gallery:hover::after,
+footer .inner .wed:hover::after,
 footer .inner .mail:hover::after {
-  transition: all 0.5s;
   opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+.dark footer .inner .finder::after,
+.dark footer .inner .notion::after,
+.dark footer .inner .gallery::after,
+.dark footer .inner .wed::after,
+.dark footer .inner .mail::after {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: #333;
+  color: #f7f7f7;
 }
 /* Dock 아이콘만 확대 */
 footer .finder img,
