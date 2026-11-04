@@ -100,8 +100,8 @@ $(function () {
     $(".project").removeClass("mobile-open");
   });
 
-  // Project 창의 왼쪽 화살표를 누르면 모바일 홈 화면으로 돌아갑니다.
-  $(".project .topbar .arrowbox img:first-child")
+  // Project 창의 왼쪽 화살표 컨테이너를 누르면 모바일 홈 화면으로 돌아갑니다.
+  $(".project .topbar .arrowbox")
     .off("click.mobileProjectBack")
     .on("click.mobileProjectBack", function (event) {
       event.preventDefault();
